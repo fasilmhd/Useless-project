@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FasiTracker 🕷️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+</head>
+
+<body>
+
+  <header>
+    <h1>🕷️ FasiTracker</h1>
+    <p>Peter Sighting Tracker</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Report a Sighting</h2>
+
+      <label for="photo">Spider Photo</label>
+
+      <input
+        id="photo"
+        type="file"
+        accept="image/*"
+        capture="environment"
+      >
+
+      <img id="preview" class="preview" alt="Spider preview">
+
+      <div class="ai-box">
+  <h3>🧠 Fasi AI Detection</h3>
+  <p id="aiStatus">Loading face recognition...</p>
+      </div>
+
+      <label for="name">who is that</label>
+
+      <input
+        id="name"
+        type="text"
+        placeholder="who is that"
+        maxlength="80"
+      >
+
+      <label for="notes">Notes</label>
+
+      <textarea
+        id="notes"
+        placeholder="What did you observe?"
+        maxlength="500"
+      ></textarea>
+
+      <button id="locationBtn">
+        📍 Get Location
+      </button>
+
+      <p id="location">Location not captured</p>
+
+      <button id="reportBtn" class="report">
+        🕷️ Report Sighting
+      </button>
+
+      <p id="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>🗺️ Map</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="card">
+      <h2>My Sightings</h2>
+
+      <div id="sightings">
+        <p>No sightings yet.</p>
+      </div>
+    </section>
+
+  </main>
+
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
