@@ -89,11 +89,11 @@ const MODEL_PATH =
 
 const fasiPhotos = [
 
-  "models/photo/fasil.jpg",
+  "models/photo/fasil_1.jpg",
 
-  "models/photo/fasil1.jpg",
+  "models/photo/fasil1_1.jpg",
 
-  "models/photo/fasil2.jpg"
+  "models/photo/fasil2_1.jpg"
 
 ];
 
